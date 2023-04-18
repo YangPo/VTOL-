@@ -1,0 +1,303 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+  <model name='Car'>
+    <static>true</static>
+
+    <link name='car01'>
+
+      <pose frame=''>0 0 0 1.5829 -0 0</pose>
+      
+       <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/project/src/model_test/models/PAC3/File Formats/OBJ/PAC3.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>>
+
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/project/src/model_test/models/PAC3/File Formats/OBJ/PAC3.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>model://car_model/materials/scripts</uri>
+            <uri>model://car_model/materials/textures</uri>
+            <name>Car/Diffuse</name>
+          </script>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+
+    </link>
+
+<!--     <link name='car02'>
+
+      <collision name='collision'>
+        <pose>0 0 0.8 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/project/src/model_test/models/car_model/meshes/CAR01.stl</uri>
+            <scale>0.1 0.1 0.1</scale>>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <pose>-2 0 0.8 0 0 0</pose>
+        <geometry>
+          <mesh>
+             <uri>/home/leo/project/src/model_test/models/car_model/meshes/CAR01.stl</uri>
+            <scale>0.1 0.1 0.1</scale>>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>model://car_model/materials/scripts</uri>
+            <uri>model://car_model/materials/textures</uri>
+            <name>Thermal</name>
+          </script>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+    </link> -->
+
+    <link name="tree_1">
+      <pose>0 10 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://oak_tree/meshes/oak_tree.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="branch">
+        <geometry>
+          <mesh>
+            <uri>model://oak_tree/meshes/oak_tree.dae</uri>
+            <submesh>
+              <name>Branch</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://oak_tree/materials/scripts/</uri>
+            <uri>model://oak_tree/materials/textures/</uri>
+            <name>OakTree/Branch</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="bark">
+        <geometry>
+          <mesh>
+            <uri>model://oak_tree/meshes/oak_tree.dae</uri>
+            <submesh>
+              <name>Bark</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://oak_tree/materials/scripts/</uri>
+            <uri>model://oak_tree/materials/textures/</uri>
+            <name>OakTree/Bark</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="tree_2">
+      <pose>-10 -10 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://pine_tree/meshes/pine_tree.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="branch">
+        <geometry>
+          <mesh>
+            <uri>model://pine_tree/meshes/pine_tree.dae</uri>
+            <submesh>
+              <name>Branch</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://pine_tree/materials/scripts/</uri>
+            <uri>model://pine_tree/materials/textures/</uri>
+            <name>PineTree/Branch</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="bark">
+        <geometry>
+          <mesh>
+            <uri>model://pine_tree/meshes/pine_tree.dae</uri>
+            <submesh>
+              <name>Bark</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://pine_tree/materials/scripts/</uri>
+            <uri>model://pine_tree/materials/textures/</uri>
+            <name>PineTree/Bark</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="tree_3">
+      <pose>10 -10 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://pine_tree/meshes/pine_tree.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="branch">
+        <geometry>
+          <mesh>
+            <uri>model://pine_tree/meshes/pine_tree.dae</uri>
+            <submesh>
+              <name>Branch</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://pine_tree/materials/scripts/</uri>
+            <uri>model://pine_tree/materials/textures/</uri>
+            <name>PineTree/Branch</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="bark">
+        <geometry>
+          <mesh>
+            <uri>model://pine_tree/meshes/pine_tree.dae</uri>
+            <submesh>
+              <name>Bark</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://pine_tree/materials/scripts/</uri>
+            <uri>model://pine_tree/materials/textures/</uri>
+            <name>PineTree/Bark</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="c">
+      <pose>0 -10 0 0 0 -1.5713</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.08 0.08 0.08</scale>
+            <uri>model://fire_truck/meshes/fire_truck.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.08 0.08 0.08</scale>
+            <uri>model://fire_truck/meshes/fire_truck.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="land">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision_yosemite">
+        <geometry>
+          <heightmap>
+            <uri>model://yosemite/media/yosemite_elevation.tif</uri>
+            <pos>0 0 -1248.5</pos>
+          </heightmap>
+        </geometry>
+      </collision>
+      <visual name="visual_yosemite">
+        <geometry>
+          <heightmap>
+            <texture>
+              <diffuse>model://yosemite/media/textures/yosemite_color.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>6000</size>
+            </texture>
+            <uri>model://yosemite/media/yosemite_elevation.tif</uri>
+            <pos>0 0 -1248.5</pos>
+          </heightmap>
+        </geometry>
+      </visual>
+    </link>
+
+<!--     <link name='carll01'>
+
+      <collision name='collision'>
+        <pose>-5 0 0.8 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/project/src/model_test/models/car_model/meshes/CARII01.stl</uri>
+            <scale>0.1 0.1 0.1</scale>>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <pose>-5 0 0.8 0 0 0</pose>
+        <geometry>
+          <mesh>
+             <uri>/home/leo/project/src/model_test/models/car_model/meshes/CARII01.stl</uri>
+            <scale>0.1 0.1 0.1</scale>>
+          </mesh>
+        </geometry>
+      </visual>
+    </link> -->
+
+<!--     <link name='carll02'>
+
+      <collision name='collision'>
+        <pose>-5 10 0.8 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>/home/leo/project/src/model_test/models/car_model/meshes/CARII02.stl</uri>
+            <scale>0.1 0.1 0.1</scale>>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <pose>-5 10 0.8 0 0 0</pose>
+        <geometry>
+          <mesh>
+             <uri>/home/leo/project/src/model_test/models/car_model/meshes/CARII02.stl</uri>
+            <scale>0.1 0.1 0.1</scale>>
+          </mesh>
+        </geometry>
+      </visual>
+    </link> -->
+
+  </model>
+</sdf>
